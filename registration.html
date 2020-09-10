@@ -1,0 +1,98 @@
+z<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=">
+  <title></title>
+</head>
+<body>
+  <!--
+  <table border="1">
+    <tr>
+      <td><em>Row1</em> Col1</td>
+      <td>Row1 Col2</td>
+    </tr>
+    <tr>
+      <td>Row2 Col1</td>
+      <td>Row2 Col2</td>
+    </tr>    
+  </table>
+  -->
+  
+      <legend>Registraion Form</legend>
+      <table>
+        <tr>
+          <td>Name</td>
+          <td><input type="text" 
+                     id="txtName" 
+                     name="txtName"
+                     placeholder="Enter username here"
+                     />
+          </td>
+        </tr>
+        <tr>
+          <td>Password</td>
+          <td><input type="password" id="txtPassword" name="txtPassword" /></td>
+           placeholder="Enter password here"
+        </tr>
+        
+        <tr>
+          <td>Login as</td>
+          <td>
+            <input type="radio" 
+                   id="loginType" 
+                   name="loginType"
+                   value = "Guest"
+                   selected="selected"/>
+            <label for="loginType">Guest</label>
+            
+            <input type="radio"
+                   id="loginType"
+                   name="loginType"
+                   value="Admin"/>
+            <label for="loginType">Admin</label>            
+          </td>
+        </tr>
+        
+        <tr>
+          <td colspan="2">
+            Login as
+            <select name="drpLoginType" id="drpLoginType">
+              <option value="Guest">Guest</option>
+              <option value="Admin">Admin</option>
+              <option value="SuperUser">Super &nbsp;&nbsp;&nbsp;&nbsp; User</option>
+              <option value="Business Owner">Business Owner</option>
+            </select>
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td colspan="2">
+            <input type="checkbox" 
+                   id="cbxPolicy1"
+                   name="cbxPolicy1"
+                   value="I accept lorem ipsum"/>
+            <label for="cbxPolicy1">I accept lorem ipsum</label>
+          </td>
+        </tr>
+        
+        <tr>
+          <td colspan="2">
+            <input type="checkbox" 
+                   id="cbxPolicy2"
+                   name="cbxPolicy2"
+                   value="I accept lorem ipsum 2"/>
+            <label for="cbxPolicy2">I accept lorem ipsum 2</label>
+          </td>
+        </tr>        
+        
+        <tr>
+          <td colspan="2" align="right">
+            <button id="btnLogin" onClick="alert(document.getElementById('txtName').value)">Login</button>
+          </td>
+        </tr>
+      </table>
+  
+</body>
+</html>
