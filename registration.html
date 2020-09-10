@@ -1,52 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=">
-<title> Registration </title>
-</head>
-<body>
-<h1> Registration Form for New Students</h1>
-<form>
-<table>
-	<tr>
-		<td>First Name</td>
-		<td><input type="text" id="first_name" name="first_name" placeholder="Enter Your Name"></td>
-	</tr>
-	<tr>
-		<td>Last Name</td>
-		<td><input type="text" id="last_name" name="last_name" placeholder="Enter Last Name"></td>
-	</tr>
-	<tr>
-		<td>Password</td>
-		<td><input type="password" id="password" name="password" placeholder="******"></td>
-	</tr>
-	<tr>
-  		<input type="radio" id="male" name="gender" value="male">
-  		<label for="male">Male</label><br>
-  		<input type="radio" id="female" name="gender" value="female">
-  		<label for="female">Female</label><br>
-  		<input type="radio" id="other" name="gender" value="other">
-  		<label for="other">Other</label>
-	</tr>
-	<tr>
-		<td>Status</td>
-		<td><input type="checkbox" id="single" name="single"><label for="single">single</label></td>
-		<td><input type="checkbox" id="married" name="single"><label for="married">married</label></td>
-	</tr>
-	<tr>
-		<td>Occupation</td>
-		<td><select name="occupation" id="occupation">
-		<option value="Engineer">Engineer</option>
-		<option value="Accountant">Accountant</option>
-		<option value="Teacher">Teacher</option>	
-		</select></td>
-	</tr>
-	<tr>
-	<td><button type="reset" value="reset">Reset</button></td>
-	</tr>
-
+<html>
+  <head>
+    <title>Registration Form</title>
+    <meta charset="utf-8">
+    <h1>Registration Form for students</h1>
+  </head>
+<form action="/action_page.php">
+  <label for="fname">Email:</label><br>
+  <input type="text" id="fname" name="fname" value=""><br>
+  <label for="lname">Password:</label><br>
+  <input type="password" id="lname" name="lname" value=""><br><br>
+  <input type="button" value="Submit">
+  <input type="reset" value="Reset">
 </form>
-</table>
-</body>
-</html>
+Login as
+            <select name="drpLoginType" id="drpLoginType">
+              <option value=""></option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="Rather not say">Rather not say</option>
+            </select>
+<form>
+  <label for="question">Where do you live?</label><br>
+  <input type="radio" id="On campus" name="place" value="On campus">
+  <label for="male">On campus</label><br>
+  <input type="radio" id="Off campus" name="place" value="Off campus">
+  <label for="female">Off campus</label><br>
+</form>
+<form>
+  <label for="question">In what stage of studies are you right now?</label><br>
+  <input type="checkbox" id="Freshmen" name="Type" value="Freshmen">
+  <label for="vehicle1"> Freshmen </label><br>
+  <input type="checkbox" id="Sophomore" name="Type" value="Sophomore">
+  <label for="vehicle2"> Sophomore</label><br>
+  <input type="checkbox" id="Junior" name="Type" value="Junior">
+  <label for="vehicle3"> Junior</label><br>
+  <input type="checkbox" id="Senior" name="Type" value="Senior">
+  <label for="vehicle3"> Senior</label><br>
+  <input type="checkbox" id="Graduate" name="Type" value="Graduate">
+  <label for="vehicle3"> Graduate</label><br>
+</form>
