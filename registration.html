@@ -6,7 +6,7 @@
 <title> Registration </title>
 </head>
 <body>
-<h1> Registration Form </h1>
+<h1> Registration Form for New Students</h1>
 <form>
 <table>
 	<tr>
@@ -21,11 +21,14 @@
 		<td>Password</td>
 		<td><input type="password" id="password" name="password" placeholder="******"></td>
 	</tr>
-	<tr>
-		<td>Sex</td>
-		<td><input type="radio" id="male" name="male"><label for="male"> Male </label></td>
-		<td><input type="radio" id="female" name="female"><label for="female"> Female </label></td>
-	</tr>
+	<form>
+  		<input type="radio" id="male" name="gender" value="male">
+  		<label for="male">Male</label><br>
+  		<input type="radio" id="female" name="gender" value="female">
+  		<label for="female">Female</label><br>
+  		<input type="radio" id="other" name="gender" value="other">
+  		<label for="other">Other</label>
+	</form>
 	<tr>
 		<td>Status</td>
 		<td><input type="checkbox" id="single" name="single"><label for="single">single</label></td>
