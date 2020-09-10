@@ -1,86 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=">
-  <title>Registration Form</title>
-    <meta charset="utf-8">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=">
+<title> Registration </title>
 </head>
 <body>
-      <legend>Registraion Form</legend>
-      <table>
-        <tr>
-          <td>Name: </td>
-          <td><input type="text" 
-                     id="txtName" 
-                     name="txtName"
-                     placeholder="Enter username here"
-                     />
-          </td>
-        </tr>
-        <tr>
-          <td>Password</td>
-          <td><input type="password" id="txtPassword" name="txtPassword" placeholder="Enter password here"/></td>
-           
-        </tr>
-        
-        <tr>
-          <td>Login as</td>
-          <td>
-            <input type="radio" 
-                   id="loginType" 
-                   name="loginType"
-                   value = "Guest"
-                   selected="selected"/>
-            <label for="loginType">Guest</label>
-            
-            <input type="radio"
-                   id="loginType"
-                   name="loginType"
-                   value="Admin"/>
-            <label for="loginType">Admin</label>            
-          </td>
-        </tr>
-        
-        <tr>
-          <td colspan="2">
-            Login as
-            <select name="drpLoginType" id="drpLoginType">
-              <option value="Guest">Guest</option>
-              <option value="Admin">Admin</option>
-              <option value="SuperUser">Super &nbsp;&nbsp;&nbsp;&nbsp; User</option>
-              <option value="Business Owner">Business Owner</option>
-            </select>
-            
-          </td>
-        </tr>
-        
-        <tr>
-          <td colspan="2">
-            <input type="checkbox" 
-                   id="cbxPolicy1"
-                   name="cbxPolicy1"
-                   value="I accept lorem ipsum"/>
-            <label for="cbxPolicy1">I accept lorem ipsum</label>
-          </td>
-        </tr>
-        
-        <tr>
-          <td colspan="2">
-            <input type="checkbox" 
-                   id="cbxPolicy2"
-                   name="cbxPolicy2"
-                   value="I accept lorem ipsum 2"/>
-            <label for="cbxPolicy2">I accept lorem ipsum 2</label>
-          </td>
-        </tr>        
-        
-        <tr>
-          <td colspan="2" align="right">
-            <button id="btnLogin" onClick="alert(document.getElementById('txtName').value)">Login</button>
-          </td>
-        </tr>
-      </table>
-  
+<h1> Registration Form </h1>
+<form>
+<table>
+	<tr>
+		<td>First Name</td>
+		<td><input type="text" id="first_name" name="first_name" placeholder="Enter Your Name"></td>
+	</tr>
+	<tr>
+		<td>Last Name</td>
+		<td><input type="text" id="last_name" name="last_name" placeholder="Enter Last Name"></td>
+	</tr>
+	<tr>
+		<td>Password</td>
+		<td><input type="password" id="password" name="password" placeholder="******"></td>
+	</tr>
+	<tr>
+		<td>Sex</td>
+		<td><input type="radio" id="male" name="male"><label for="male"> Male </label></td>
+		<td><input type="radio" id="female" name="female"><label for="female"> Female </label></td>
+	</tr>
+	<tr>
+		<td>Status</td>
+		<td><input type="checkbox" id="single" name="single"><label for="single">single</label></td>
+		<td><input type="checkbox" id="married" name="single"><label for="married">married</label></td>
+	</tr>
+	<tr>
+		<td>Occupation</td>
+		<td><select name="occupation" id="occupation">
+		<option value="Engineer">Engineer</option>
+		<option value="Accountant">Accountant</option>
+		<option value="Teacher">Teacher</option>	
+		</select></td>
+	</tr>
+	<tr>
+	<td><button type="reset" value="reset">Reset</button></td>
+	</tr>
+
+</form>
+</table>
 </body>
 </html>
