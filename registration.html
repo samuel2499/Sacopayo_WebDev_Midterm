@@ -1,43 +1,49 @@
+<!DOCTYPE HTML>
 <html>
-  <head>
-    <title>Registration Form New Students</title>
-    <meta charset="utf-8">
-    <h1>Registration Form for New Students</h1>
-  </head>
-<form action="/action_page.php">
-  <label for="fname">Email:</label><br>
-  <input type="text" id="fname" name="fname" value=""><br>
-  <label for="lname">Password:</label><br>
-  <input type="reset" value="Reset">
-  
-</form>
-  <label for="gender">Gender</label><br>
-            <select name="drpLoginType" id="drpLoginType">
-              <option value="">""</option>
-              <option value="Male">Male</option>
-              <option value="Female">Female</option>
-              <option value="Others">Others</option>
-            </select>
-<form>
-  <label for="question">Where do you live?</label><br>
-  <input type="radio" id="On campus" name="place" value="On campus">
-  <label for="male">On campus</label><br>
-  <input type="radio" id="Off campus" name="place" value="Off campus">
-  <label for="female">Off campus</label><br>
-</form>
-<form>
-  <label for="question">In what stage of studies are you right now?</label><br>
-  <input type="checkbox" id="Freshmen" name="Type" value="Freshmen">
-  <label for="vehicle1"> Freshmen </label><br>
-  <input type="checkbox" id="Sophomore" name="Type" value="Sophomore">
-  <label for="vehicle2"> Sophomore</label><br>
-  <input type="checkbox" id="Junior" name="Type" value="Junior">
-  <label for="vehicle3"> Junior</label><br>
-  <input type="checkbox" id="Senior" name="Type" value="Senior">
-  <label for="vehicle3"> Senior</label><br>
-  <input type="checkbox" id="Graduate" name="Type" value="Graduate">
-  <label for="vehicle3"> Graduate</label><br>
-  
-</form>
-  <input type="button" value="Submit">
-  <input type="password" id="lname" name="lname" name="question" name="radio" name="male" name="radio" name="female" name=""value=""><br><br>
+<head>
+  <title>Register Form</title>
+</head>
+<body>
+ <form action="insert.php" method="POST">
+  <table>
+   <tr>
+    <td>Name :</td>
+    <td><input type="text" name="username" required></td>
+   </tr>
+   <tr>
+    <td>Password :</td>
+    <td><input type="password" name="password" required></td>
+   </tr>
+   <tr>
+    <td>Gender :</td>
+    <td>
+     <input type="radio" name="gender" value="m" required>Male
+     <input type="radio" name="gender" value="f" required>Female
+    </td>
+   </tr>
+   <tr>
+    <td>Email :</td>
+    <td><input type="email" name="email" required></td>
+   </tr> 
+   <tr>
+    <td>Phone no :</td>
+    <td>
+     <select name="phoneCode" required>
+      <option selected hidden value="">Select Code</option>
+      <option value="977">977</option>
+      <option value="978">978</option>
+      <option value="979">979</option>
+      <option value="973">973</option>
+      <option value="972">972</option>
+      <option value="974">974</option>
+     </select>
+     <input type="phone" name="phone" required>
+    </td>
+   </tr>
+   <tr>
+    <td><input type="submit" value="Submit"></td>
+   </tr>
+  </table>
+ </form>
+</body>
+</html>
