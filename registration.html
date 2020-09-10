@@ -1,49 +1,86 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-  <title>Register Form</title>
-</head>
-<body>
- <form action="insert.php" method="POST">
-  <table>
-   <tr>
-    <td>Name :</td>
-    <td><input type="text" name="username" required></td>
-   </tr>
-   <tr>
-    <td>Password :</td>
-    <td><input type="password" name="password" required></td>
-   </tr>
-   <tr>
-    <td>Gender :</td>
-    <td>
-     <input type="radio" name="gender" value="m" required>Male
-     <input type="radio" name="gender" value="f" required>Female
-    </td>
-   </tr>
-   <tr>
-    <td>Email :</td>
-    <td><input type="email" name="email" required></td>
-   </tr> 
-   <tr>
-    <td>Phone no :</td>
-    <td>
-     <select name="phoneCode" required>
-      <option selected hidden value="">Select Code</option>
-      <option value="977">977</option>
-      <option value="978">978</option>
-      <option value="979">979</option>
-      <option value="973">973</option>
-      <option value="972">972</option>
-      <option value="974">974</option>
-     </select>
-     <input type="phone" name="phone" required>
-    </td>
-   </tr>
-   <tr>
-    <td><input type="submit" value="Submit"></td>
-   </tr>
-  </table>
- </form>
-</body>
-</html>
+<html lang= "en">
+   <form>
+              
+           <legend style="font-size:24px">CCS Registration Form</legend><br>
+  
+    <label for="email"><b>Email:</label><br>
+  <input type="text" id="fname" name="fname" placeholder="Enter your Email"><br>
+  
+  <label for="uname">Username:</label><br>
+  <input type="text" id="fname" name="fname" placeholder="Enter Username"><br>
+  
+                
+  <label for="pwd">Password:</label><br>
+ <input type="password" id="txtpwd" name="txtpwd" placeholder="******"><br>
+      <label for="pwd">Re-Type Password:</b></label><br>
+  <input type="password" id="txtpwd" name="txtpwd" placeholder="******">
+  <br>
+  
+  <br>
+  
+     <label for="COURSE"><b>Course:</b></label>
+
+<select name="course" id="Scourse" >  
+  <option value="Ccourse">Choose Course</option>
+  <option value="BSIT">BS Information Technology</option>
+  <option value="BSIM">BS Information Management</option>
+  <option value="BSCS">BS Computer Science</option> 
+  <br>
+  </select>
+  <br>
+     <br>
+     <label for="email"><b>Adress:</b></label>
+  <input type="text" id="fname" name="fname" style="width:300px;height:12px" placeholder="Enter your Adress"><br>
+  
+  <br>
+  <label for="birthday"><b>Date of Birth:</b></label>
+  <br>
+  <select name="course" id="Scourse">  
+  <option value="Ccourse">Month</option>
+  <option value="January">January</option>
+  <option value="Febuary">Febuary</option>
+  <option value="March">March</option>
+  <option value="Febuary">April</option>
+  <option value="Febuary">May</option>
+  <option value="Febuary">June</option>
+  <option value="Febuary">July</option>
+  <option value="Febuary">August</option>
+  <option value="Febuary">September</option>
+  <option value="Febuary">October</option>
+  <option value="Febuary">November</option>
+  <option value="Febuary">December</option>
+ 
+<input type="text" style="width:40px;height:12px" maxlength=2 placeholder="Date">
+<input type="text" style="width:80px;height:12px" maxlength=4 placeholder="Year">
+  
+  <br>
+  
+   <br>
+  
+  
+ <legend><b>Gender</b></legend>
+  
+  
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Male</label><br>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label><br>
+  <input type="radio" id="other" name="gender" value="other">
+  <label for="other">Other</label><br>
+
+  <br>
+                  
+                
+ <input type="submit" style="width:80px;height:20px" value="Register">
+  <td><button type="reset" style="width:80px;height:20px" value="reset"> Reset </button></td>
+	</tr> <br>
+     <br>
+      <input type="checkbox" id="Student Year" name="Fyear" value="Bike">
+  <label for="vehicle1"><b>I Accept the Terms and Agreement</b></label><br>
+  
+  
+</select>
+              </form>
+              
+               </body>
+            </html>
