@@ -9,7 +9,7 @@
 			color;
 			font-size: 18px;
 			background: #f7f7f7;
-			font-family: "Arial", sans-serif;
+			font-family: "Tahoma", sans-serif;
 			}
 			a {
 			  color: #000000;
@@ -18,7 +18,7 @@
 			  text-decoration: none;
 			}
 			a:hover {
-			  color: #00bdfc;
+			  color: #088711;
 			  transition: 1s;
 			}
 			b {
@@ -145,7 +145,7 @@
 </head>
 <body>
   <h1>
-    <center>MasterDetail</center
+    <center>Master Detail</center
   </h1>
   <div id="container">
     <div class="sidebar">
@@ -158,7 +158,6 @@
       <li class="item">
         <a href="#" onclick="setSelected(event)">Registration Page</a>
 
-		
       </li>
       <li class="item">
         <a href="#" onclick="setSelected(event)">Calendar Page</a>
@@ -179,8 +178,11 @@
 	let selected = document.getElementsByClassName('selected')[0];
 	function setSelected(e) {
 	  if (e.target != selected) {
+		// Remove old selected classname
 		selected.classList.remove('selected');
+		// Set the new selected
 		selected = e.target.parentNode;
+		// Set the classname
 		selected.classList.add('selected');    
 	  }
 	}
