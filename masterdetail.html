@@ -1,69 +1,189 @@
-<html>
+<!DOCTYPE HTML>
+<html lang="en">
 <head>
-<style>
-body {
-  margin: 0;
-}
-
-ul {
- 
-  list-style-type: none;
-  margin: 0;
-  padding: 10;
-  width: 10%;
-  background-color: #f2f2f2;
-  position: fixed;
-  height: 50%;
-  overflow: auto;
-  border: 1px solid #555;
-}
-
-li a {
-  display: block;
-  color: #000;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-bottom: 1px solid #555;
-}
-
-li a.active {
-  background-color: #4CAF50;
-  color: white;
-}
-
-li a:hover:not(.active) {
-  background-color: #555;
-  color: white;
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=">
+  <title>Masterdetail</title>
+  <style>
+			body {
+			color;
+			font-size: 18px;
+			background: #f7f7f7;
+			font-family: "Arial", sans-serif;
+			}
+			a {
+			  color: #000000;
+			  border: 0px;
+			  transition: 1s;
+			  text-decoration: none;
+			}
+			a:hover {
+			  color: #00bdfc;
+			  transition: 1s;
+			}
+			b {
+			  font-weight: 700;
+			  color: #000;
+			}
+			h1 {
+			  color: #000;
+			  font-size: 32px;
+			  text-align: center;
+			  font-family: "Tahoma", sans-serif;
+			}
+			h2 {
+			  padding:3px;
+			  color: #000;
+			  margin: 5px;
+			  font-size: 26px;
+			  text-align: center;
+			  border-bottom: 2px solid #000;
+			  font-family: "Tahoma", sans-serif;
+			}
+			table {
+			  width: 400px;
+			  color: #000;
+			  height: 400px;
+			}
+			th {
+			  align: center;
+			}
+			td {
+			  padding: 5px;
+			}
+			input {
+			  border: 1px solid #a3a3a3;
+			  padding: 5px;
+			  margin: 0px;
+			}
+			#container {
+			  margin: auto;
+			  width:66%;
+			  height: 540px;
+			  position: relative;
+			  background: #fff;
+			  border: 2px solid #fff;
+			}
+			.sidebar{
+			  width: 210px;
+			  float:left;
+			  height: 540px;
+			  align:left;
+			  background: #a3a3a3;
+			  border-right: 2px solid #fff;
+			}
+			.sidebar a {
+			  text-transform: uppercase;
+			  font-size: 16px;
+			  padding: 15px;
+			  width: 180px;
+			  border-bottom: 2px solid #fff;
+			  background: #a3a3a3;
+			  color: #fff;
+			  transition: 1s;
+			}
+			.sidebar a:hover {
+			  background: #fff;
+			  color: #000;
+			  cursor: pointer;
+			  transition: 1s;
+			}
+			.item {
+			  display: flex;
+			  height: 60px;
+			  width: 900px;
+			}
+			.content{
+			  margin-top: -290px;
+			}
+			.content6{
+			  margin-top: -50px;
+			}
+			.content5{
+			  margin-top: -100px;
+			}
+			.content4{
+			  margin-top: -230px;
+			}
+			.content2{
+			  margin-top: -290px;
+			}
+			.content3{
+			  margin-top: -170px;
+			}
+			.selected section {
+			  display: block;
+			}
+			section {
+			  overflow-x:scroll;
+			  width: 600px;
+			  height: 510px;
+			  display: inline-block;
+			  padding: 5px;
+			  background: #fff;
+			  margin: 10px;
+			  z-index: 999999999;
+			  display: none;
+			}
+			/* width */
+			::-webkit-scrollbar {
+			  width: 10px;
+			}
+			/* Track */
+			::-webkit-scrollbar-track {
+			  background: #f1f1f1;
+			}
+			/* Handle */
+			::-webkit-scrollbar-thumb {
+			  background: #888;
+			}
+			/* Handle on hover */
+			::-webkit-scrollbar-thumb:hover {
+			  background: #555;
+			}
+			  </style>
 </head>
 <body>
-<form action="">
+  <h1>
+    <center>MasterDetail</center
+  </h1>
+  <div id="container">
+    <div class="sidebar">
+      <li class="item selected">
+        <a href="#" onclick="setSelected(event)">About</a><br>
+        <section>
+          <h2>Welcome!</h2>
+        </section>
+      </li>
+      <li class="item">
+        <a href="#" onclick="setSelected(event)">Registration Page</a>
 
-  <ul>
-
-    <div class="cont">
-        <div class="c-3 m">
-             <div class="m-item tit"><strong>Activities</strong></div>
-          <div class="m-item"><li><a href="poem.html" target="iname">Poem</a></li></div>
-            <div class="m-item"><li><a href="markup.html" target="iname">Markup</a></li></div>
-            <div class="m-item"><li><a href="wishlist.html" target="iname">Wishlist</a></li></div>
-            <div class="m-item"><li><a href="calendar.html" target="iname">Calendar</a></li></div>
-            <div class="m-item"><li><a href="registration.html" target="iname">Registration</a></li></div>
-            <div class="m-item"><li><a href="vmg.html" target="iname">VISSION, MISSION AND GOAL</li></a></div>
-        </div>
-   </ul>
-
-    <div style="margin-left:10%;padding:1px 100px;height:100%;">
-<div class="c-9 det">
-            <iframe src="poem.html" name="iname" frameborder=""height="100%" width="100%"></iframe>
-        </div>
-
-
-
- 
-</div>
-
-</form>
+		
+      </li>
+      <li class="item">
+        <a href="#" onclick="setSelected(event)">Calendar Page</a>
+      </li>
+      <li class="item">
+        <a href="#" class="masterlist" onclick="setSelected(event)">Wishlist Page</a>
+      </li>
+      <li class="item">
+		<a href="#" onclick="setSelected(event)">Markup page</a>
+      </li>
+      <li class="item">
+        <a href="#" onclick="setSelected(event)">Poem page</a>
+      </li>
+    </div>
+  </div>
+  </div>
+<script>
+	let selected = document.getElementsByClassName('selected')[0];
+	function setSelected(e) {
+	  if (e.target != selected) {
+		selected.classList.remove('selected');
+		selected = e.target.parentNode;
+		selected.classList.add('selected');    
+	  }
+	}
+</script>
 </body>
 </html>
