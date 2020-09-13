@@ -6,13 +6,14 @@ body {
 }
 
 ul {
+ 
   list-style-type: none;
   margin: 0;
-  padding: 0;
-  width: 25%;
-  background-color: #f1f1f1;
+  padding: 10;
+  width: 10%;
+  background-color: #f2f2f2;
   position: fixed;
-  height: 100%;
+  height: 50%;
   overflow: auto;
   border: 1px solid #555;
 }
@@ -20,7 +21,7 @@ ul {
 li a {
   display: block;
   color: #000;
-  padding: 8px 16px;
+  padding: 10px 20px;
   text-decoration: none;
   border-bottom: 1px solid #555;
 }
@@ -37,25 +38,32 @@ li a:hover:not(.active) {
 </style>
 </head>
 <body>
-<body >
+<form action="">
+
+  <ul>
+
     <div class="cont">
         <div class="c-3 m">
-            <div class="m-item tit"><strong>Activities</strong></div>
-            <div class="m-item"><a href="poem.html" target="iname">Poem</a></div>
-            <div class="m-item"><a href="markup.html" target="iname">Markup</a></div>
-            <div class="m-item"><a href="wishlist.html" target="iname">Wishlist</a></div>
-            <div class="m-item"><a href="calendar.html" target="iname">Calendar</a></div>
-            <div class="m-item"><a href="registration.html" target="iname">Registration</a></div>
-            <div class="m-item"><a href="vmg.html" target="iname">VMG</a></div>
+             <div class="m-item tit"><strong>Activities</strong></div>
+          <div class="m-item"><li><a href="Poem.html" target="iname">Poem</a></li></div>
+            <div class="m-item"><li><a href="Markup.html" target="iname">Markup</a></li></div>
+            <div class="m-item"><li><a href="Wishlist.html" target="iname">Wishlist</a></li></div>
+            <div class="m-item"><li><a href="Calendar.html" target="iname">Calendar</a></li></div>
+            <div class="m-item"><li><a href="registration.html" target="iname">Registration</a></li></div>
+            <div class="m-item"><li><a href="vmg.html" target="iname">VMG</li></a></div>
         </div>
-        <div class="c-9 det">
+   </ul>
+
+    <div style="margin-left:10%;padding:1px 100px;height:100%;">
+<div class="c-9 det">
             <iframe src="poem.html" name="iname" frameborder=""height="100%" width="100%"></iframe>
         </div>
 
-    </div>
 
-    </body>
+
  
+</div>
 
 </form>
+</body>
 </html>
