@@ -2,7 +2,7 @@ body {
 	background-image: url("img/calendar.jpg");
 }
 table, td{
-	border: 4px solid gray;
+	border: 4px solid black;
 	border-spacing: 5px;
 	padding: 10px;
 	border-collapse: separate;
