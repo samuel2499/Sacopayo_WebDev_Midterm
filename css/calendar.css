@@ -1,5 +1,5 @@
 body {
-	background-image: url("img/calendar.jpg")no-repeat center center fixed;
+	background-image: url("img/calendar.jpg")center fixed;
 }
 table, td{
 	border: 3px solid black;
