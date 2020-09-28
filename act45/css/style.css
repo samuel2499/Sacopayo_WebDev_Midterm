@@ -129,8 +129,5 @@ img.top-image {
     font-style : italic;
 }
 
-ul.body-list{
-    list-style-position: inside;
-    list-style-image: url('https://amoyanatuic.github.io/Amoyan_WebDev_Midterm/act45/css/small_arrow.png');
-    line-height : 1.8em;
+
 }
