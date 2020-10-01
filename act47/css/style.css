@@ -1,0 +1,45 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  background-image: url("es.jpeg");
+}
+.container{
+  background: 	#32CD32;
+  border-radius: 10px;
+  max-width: 900px;
+}
+#banner{
+  height: 400px;
+  max-width: 900px;
+  background: url("https://thesportsseerdotcom.files.wordpress.com/2013/04/kobe-bryant-2013-hd-wallpaper.jpg");
+  background-position: center; 
+  background-size: cover;
+  border-style: solid;
+  border-size: 3px;
+  border-color: white;
+  border-radius: 3px;
+  margin: 10px 0px;
+}
+#nba{
+  padding: 5px 10px; 
+  border-style: solid;
+  border: 3px solid white;
+  margin-bottom: 10px;
+}
+#AS{
+  padding: 5px 10px; 
+  border: 3px solid white;
+  border-radius: 3px;
+}
+a{
+  color: black;
+  text-decoration: underline;
+}
+ul{
+  display: inline-block;
+}
+.quote{
+  font-size: 15px;
+  font-family: "Lucida Console", Courier, monospace;
+}
