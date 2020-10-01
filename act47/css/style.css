@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 body{
-  background-image: url("es.jpeg");
+  background-image: url("es.jpg");
 }
 .container{
   background: 	#32CD32;
@@ -12,7 +12,7 @@ body{
 #banner{
   height: 400px;
   max-width: 900px;
-  background: url("https://thesportsseerdotcom.files.wordpress.com/2013/04/kobe-bryant-2013-hd-wallpaper.jpg");
+  background: url("es.jgp");
   background-position: center; 
   background-size: cover;
   border-style: solid;
