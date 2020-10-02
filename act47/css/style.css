@@ -4,6 +4,7 @@
 body{
   background-image: url("es.jpg");
   background-repeat: no-repeat;
+  background-size: auto;
 }
 .container{
   max-width: 400px;
