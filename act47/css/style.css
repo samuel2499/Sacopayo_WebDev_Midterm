@@ -5,8 +5,8 @@ body{
   background-image: url("es.jpg");
 }
 .container{
-  margin-right: 150px;
-  margin-left: 150px;
+  max-width: 300px;
+  margin: auto;
   background: 	#32CD32;
   border-radius: 10px;
   max-width: 900px;
