@@ -3,8 +3,6 @@
 }
 body{
   background-image: url("es.jpg");
-  background-repeat: no-repeat;
-  background-size: 1000px 300px;
 }
 .container{
   max-width: 400px;
