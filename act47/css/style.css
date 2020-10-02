@@ -3,6 +3,8 @@
 }
 body{
   background-image: url("es.jpg");
+  margin-right: 150px;
+  margin-left: 150px;
 }
 .container{
   background: 	#32CD32;
@@ -15,6 +17,7 @@ body{
   background: url("es.jgp");
   background-position: center; 
   background-size: cover;
+  background-repeat: no-repeat;
   border-style: solid;
   border-size: 3px;
   border-color: white;
