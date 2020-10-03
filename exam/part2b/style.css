@@ -2,6 +2,7 @@ body
 {
 	height: 1700px;
 	background: #0567a8;
+  background-image: url("background.png");
   font-family: Sans-serif;
 
 } 
