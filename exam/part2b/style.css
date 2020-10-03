@@ -1,9 +1,10 @@
 body 
 {
 	height: 1700px;
-	background: #0567a8;
+	background: #0567a8 ;
   background-image: url("background.png");
   font-family: Sans-serif;
+  
 
 } 
 #bio
@@ -12,7 +13,7 @@ body
 	margin-top: -4%;
 	height:350px;
 	width: 80%;
-  background-color:#60e3d5;
+  background-color:rgba(95, 227, 213, 0.4);
 	border: 2px double black;
 	border-radius: 30px;
 	padding: 10px;
@@ -84,7 +85,7 @@ body
  align-items: center;
  justify-content: center;
  padding: 40px 2% 20px 2%;
- background-color:#0567a8;
+ background-color:rgba(5, 103, 168, 0.4) ;
 }
  
 .p-headind{
@@ -92,11 +93,11 @@ font-family: Sans-serif;
 color:white;
  width: 50%;
   margin-top: 0%;
+  border-style:  dotted dashed solid double;
   padding: 10px;
   text-align: center;
   font-weight: 500;
-  font-size: 60px;
-  text-shadow: 2px 4px black;
+  font-size: 40px;
  
 }
 .p-box{
@@ -167,7 +168,7 @@ width: 100%;
 
 @media(max-width:1190px){
  #main{
-  background-size: 1150px !important;
+  background-size: 1150px ;
   
  }
  .name{
