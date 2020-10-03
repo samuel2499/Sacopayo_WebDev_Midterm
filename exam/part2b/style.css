@@ -1,7 +1,8 @@
 body 
 {
 	height: 1700px;
-	background-image: url("background.png");
+	background: #0567a8;
+  font-family: Sans-serif;
 
 } 
 #bio
@@ -10,16 +11,17 @@ body
 	margin-top: -4%;
 	height:350px;
 	width: 80%;
-  background-color:#333333;
+  background-color:#60e3d5;
 	border: 2px double black;
 	border-radius: 30px;
 	padding: 10px;
+  box-shadow: 5px 8px 16px 1px rgba(0,0,0,0.69);
 }
 
 #prof_pic
 {
 	width:350px;
-	height:350px;
+	height:400px;
 	float:left;
 	display:block;
 	margin-left: 10%;
@@ -33,7 +35,7 @@ body
 	margin-right: 50px;
 	margin-left: 600px;
 	text-align: justify;
-	font-family: 'Berkshire Swash', cursive;
+	font-family: Sans-serif;
 	font-size: 30px;
 	color:black;
 	
@@ -44,9 +46,10 @@ body
 {
 	margin-top: 4%;
 	text-align: center;
-	color:black;
+	color:White;
 	font-size: 100px;
 	font-family: 'Berkshire Swash', cursive;
+  text-shadow: 2px 4px black;
 	
 }
 
@@ -70,4 +73,228 @@ body
 .logoF
 {
 	margin-left: 35%;
+}
+#portfolio{
+ width:100%;
+ box-sizing: border-box;
+ font-family: calibri;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ padding: 40px 2% 20px 2%;
+ background-color:#0567a8;
+}
+ 
+.p-headind{
+font-family: Sans-serif;
+color:white;
+ width: 50%;
+  margin-top: 0%;
+  padding: 10px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 60px;
+  text-shadow: 2px 4px black;
+ 
+}
+.p-box{
+ 
+ background-color: transparent;
+ overflow: hidden;
+ border-radius: 10px;
+ box-shadow: 2px 2px 13px rgba(0,0,0,0.3);
+ position: relative;
+ 
+}
+.p-box img{
+ 
+width: 100%;
+ height: 100%;
+ object-fit: cover;
+}
+.p-container{
+  width: 90%;
+ height:150vh;
+ display:grid;
+ grid-template-columns:2fr 2fr 2fr;
+ grid-template-rows: auto auto;
+ grid-gap: 10px; 
+}
+.overlay-text{
+ font-family: calibri;
+ position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+ top: 0;
+ width: 100%;
+ height: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ background-color: 5c8d89;
+ opacity: 70%;
+ display:none;
+  overflow: hidden;
+   transition: 3s ease;
+   cursor: pointer;
+   
+ 
+}
+.overlay-text h1,p{
+ color: Black;
+}
+.overlay-text h1{
+ font-size: 2.2rem;
+ margin: 0px;
+ padding: 0px;
+ letter-spacing: 2px;
+ 
+}
+.overlay-text p{
+ font-size: 1.2rem;
+ margin: 0px;
+ 
+ 
+}
+.p-box:hover .overlay-text{
+ display: flex;
+ 
+}
+
+@media(max-width:1190px){
+ #main{
+  background-size: 1150px !important;
+  
+ }
+ .name{
+  left: 10%;
+  top: 50%;
+  transform: translate(-10%,-50%);
+ }
+ about-model img{
+  height:100px;
+  width: 100px;
+ }
+
+ .b-container{
+  flex-wrap: wrap;
+ }
+ .s-box{
+  flex-grow: 1;
+ }
+ .s-b-img img{
+  object-fit:cover;
+ }
+
+ 
+}
+@media(max-width:970px){
+ #main{
+  background-image: none !important;
+  
+ }
+ .name{
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+ }
+
+ .about-text{
+  width: 90%;
+ }
+ .about-text h1{
+  font-size:4rem;
+ }
+ 
+ .p-container{
+  width:100%;
+ 
+ }
+ 
+}
+@media(max-width:900px){
+ .toggle{
+   display:block;
+  }
+  .toggle:before{
+ content:'\f0c9';
+ font-family: fontAwesome;
+ line-height: 0px;
+   margin-left:-30px;
+}
+  .toggle.active:before{
+ content:'\f00d' !important;
+ 
+  }
+ nav{
+  padding:10px 30px;
+ }
+ 
+ nav ul
+  {
+  position:absolute; 
+  width: 100%;
+  height:auto;
+  box-sizing:border-box;
+  background-color:#0F0F0F;
+  top: 50px;
+  left: 0;
+  transition: 0.5s;
+  overflow: hidden;
+  display: none !important;
+  border:3px solid #1F1F1F;
+ }
+ 
+  nav ul li a{
+  border-bottom: 1px solid rgba(255,255,255,0.10) ;
+  color:#ffffff !important;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px !important;
+  padding: 0px !important;
+ }
+  nav ul{
+   padding:0px;
+   margin:0px;
+  }
+ 
+  .active-menu {
+  display: block !important;
+ }
+ 
+  nav ul li a:hover{
+   background-color:rgba(27,29,32,0.15);
+ 
+   }
+ 
+ 
+ .p-container{
+  grid-template-columns:1fr 1fr;
+ grid-template-rows:auto;
+ grid-gap: 10px;
+  height: auto;
+ }
+ .c-b-heading{
+  font-size: 1.4rem;
+  text-align: center;
+ }
+ 
+}
+ 
+
+
+.about-model img{
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10%;
+  height: 500px;
+   margin: 0 auto 40px auto;
+  
 }
